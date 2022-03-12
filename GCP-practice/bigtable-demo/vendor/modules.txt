@@ -1,0 +1,2 @@
+# cloud.google.com/go/bigtable v1.10.1
+## explicit
