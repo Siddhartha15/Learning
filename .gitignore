@@ -1,0 +1,55 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*tags
+
+# Ignore generated go files from protos
+commons/pb_out/*
+
+# Config files
+*.toml
+*.toml.bak
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Ignore dot env files
+*.env
+.config.toml
+*/gosec.json
+
+# Ignore binaries
+bin/
+
+# Ignore logs
+logs/
+
+# Virtual environments
+venv/
+
+# Ignore IDE folder
+.idea/*
+*/.idea*
+*/*/.idea*
+*/.vscode
+# Dependency directories (remove the comment below to include it)
+vendor/
+pb_out/
+cluster-head/vendor/
+
+# python virtual environment
+venv/
+
+# pycache directories of tests
+**/__pycache__
+tests/test_reports/*.html
+tests/*.log
+tests/*.log.*
+tests/*.stdout
+tests/**/*.log
