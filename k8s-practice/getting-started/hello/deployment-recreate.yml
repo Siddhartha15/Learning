@@ -1,11 +1,13 @@
 apiVersion: apps/v1
-kind: ReplicaSet
+kind: Deployment
 metadata:
   name: hello
   labels:
     app: hello
 spec:
   replicas: 5
+  strategy:
+    type: Recreate # using Recreate deployment strategy instead of default RollingUpdate strategy used by kubernetes
   selector:
     matchLabels:
       app: hello
